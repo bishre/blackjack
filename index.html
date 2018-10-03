@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simplejack</title>
+    <link rel="stylesheet" href="simplejack.css">
+  </head>
+  <body onload="deck()">
+    <div>
+      <audio id="start" src="startmusic.mp3" autoplay></audio>
+    </div>
+    <div>
+      <audio id="shuffle" src="" autoplay></audio>
+    </div>
+    <div class="container">
+      <div id="playSuit" style="width: 35%; float: left">
+        <p>Player's Hand</p>
+      </div>
+
+      <div class="score" style="width: 10%; position: relative; float: left">
+        <p id="scorePlayer">Player's Score: </p>
+        <p id="scoreDealer">Dealer's Score: </p>
+      </div>
+
+      <div><p id="message" style="float: left"></p></div>
+
+      <div id="dealSuit" style="width: 35%; float: right"><p>Dealer's Hand</p></div>
+      
+      <div class='controls'>
+        <span>
+          <button type="button" name="button" id="shuffle" onclick=shuffle()>Shuffle</button>
+        </span>
+        <span>
+          <button type="button" name="button" id="deal" onclick=start()>Deal</button>
+        </span><br>
+        <span>
+          <button type="button" name="button" onclick=hitMe()>Hit me</button>
+        </span>
+        <span>
+          <button type="button" name="button" onclick=winner()>Stand</button>
+        </span>
+        <span>
+          <button type="button" id="restart" name="button" onclick="loadPage()">Restart</button>
+        </span>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="simplejack.js">
+
+    </script>
+  </body>
+</html>

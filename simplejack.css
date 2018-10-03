@@ -1,0 +1,65 @@
+body {
+  background-color: #4c8c3d;
+}
+.controls {
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  width: 15%;
+  margin: 0 auto;
+
+}
+button {
+  width: 5em;
+  height: 5em;
+  color: #999;
+  background-color: #000000;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+button:hover {
+  opacity: 0.5;
+  background-color: #e21414;
+  /* color: #e21414; */
+}
+
+#message {
+  font-size: 3em;
+  color: #e21414;
+  width: 15%;
+  text-shadow: 2px 2px #fff;
+}
+
+#restart {
+  position: fixed;
+  top: 80%;
+  left: 42%;
+  border-radius: 30px;
+}
+
+img {
+  position: relative;
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 12em;
+  height: 18em;
+}
+
+#playSuit p, #dealSuit p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #ff0000;
+  text-align: center;
+}
+
+.score {
+  text-align: center;
+}
+
+/* .container {
+  display: grid;
+} */
